@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+}
+
+.first{
+    background-color: #34e54f;
+}
+
+.sec {
+    background-color: #eb6b6b;
+}
