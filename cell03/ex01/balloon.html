@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balloon</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }        
+    </style>
 </head>
 <body>
     <div id="balloon"></div>
-
     <script>
         const balloon = document.getElementById('balloon');
         let currentSize = 200;
