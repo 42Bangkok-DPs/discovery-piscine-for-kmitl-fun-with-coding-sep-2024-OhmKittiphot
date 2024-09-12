@@ -11,10 +11,6 @@
     border: none;
 }
 
-.dropdown button:hover {
-    background-color: #3e8e41;
-}
-
 .dropdown .Sanwich {
     display: none;
     background-color: #f9f9f9;
@@ -27,10 +23,6 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
-
-.dropdown .Sanwich a:hover {
-    background-color: #f1f1f1;
 }
 
 .dropdown:hover .Sanwich {
