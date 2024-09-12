@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -14,16 +15,17 @@ body, html {
 }
 
 .image1 {
-    background-image: url('https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg'); /* Replace with your image */
+    background-image: url('https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg');
 }
 
 .image2 {
-    background-image: url('https://cdn.britannica.com/70/192570-138-848FB7B3/penguin-species-places-Galapagos-Antarctica.jpg?w=800&h=450&c=crop'); /* Replace with your image */
+    background-image: url('https://cdn.britannica.com/70/192570-138-848FB7B3/penguin-species-places-Galapagos-Antarctica.jpg?w=800&h=450&c=crop');
 }
 
 .text-center {
     color: rgb(0, 0, 0);
-    -webkit-text-stroke: white;;
+    -webkit-text-stroke: white;
+    ;
     font-size: 24px;
     font-weight: bold;
     position: absolute;
