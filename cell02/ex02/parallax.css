@@ -1,0 +1,48 @@
+/* General page styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Parallax effect for images */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+/* First image */
+.image1 {
+    background-image: url('image1.jpg'); /* Replace with your image */
+}
+
+/* Second image */
+.image2 {
+    background-image: url('image2.jpg'); /* Replace with your image */
+}
+
+/* Centered text inside the parallax images */
+.text-center {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Block section with black background */
+.block {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 20px;
+}
