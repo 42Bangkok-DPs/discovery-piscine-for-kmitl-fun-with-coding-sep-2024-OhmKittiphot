@@ -2,4 +2,11 @@ button{
     color: black;
     padding: 30px 62px;
     border-radius: 12px;
+    font-size: large;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
