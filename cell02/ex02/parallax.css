@@ -1,34 +1,29 @@
-/* General page styling */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
 }
 
-/* Parallax effect for images */
 .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     position: relative;
 }
 
-/* First image */
 .image1 {
-    background-image: url('image1.jpg'); /* Replace with your image */
+    background-image: url('https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg'); /* Replace with your image */
 }
 
-/* Second image */
 .image2 {
-    background-image: url('image2.jpg'); /* Replace with your image */
+    background-image: url('https://cdn.britannica.com/70/192570-138-848FB7B3/penguin-species-places-Galapagos-Antarctica.jpg?w=800&h=450&c=crop'); /* Replace with your image */
 }
 
-/* Centered text inside the parallax images */
 .text-center {
-    color: white;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: white;;
     font-size: 24px;
     font-weight: bold;
     position: absolute;
@@ -38,7 +33,6 @@ body, html {
     text-align: center;
 }
 
-/* Block section with black background */
 .block {
     background-color: black;
     color: white;
