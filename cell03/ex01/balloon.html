@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balloon</title>
-    <link rel="stylesheet" href="balloon.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="balloon"></div>
 
-<div id="balloon"></div>
+    <script>
+        const balloon = document.getElementById('balloon');
+        let currentSize = 200;
+        let colors = ['red', 'green', 'blue'];
+        let colorIndex = 0;
 
-<script>
-    const balloon = document.getElementById('balloon');
-    let size = 200;
-    let colors = ['red', 'green', 'blue'];
-    let colorIndex = 0;
+function updateBalloonSize(sizeChange) {
+    currentSize += sizeChange;
+    if (currentSize >= 200 && currentSize <= 420) {
+        balloon.style.width = `${currentSize}px`;
+        balloon.style.height = `${currentSize}px`;
+    }
 
-    // Function to handle click event
+    if (currentSize > 420) {
+        currentSize = 200;
+        balloon.style.width = '200px';
+        balloon.style.height = '200px';
+        balloon.style.backgroundColor = 'red';
+        colorIndex = 0;
+    }
+}
+
+function changeColor() {
+    colorIndex = (colorIndex + 1) % colors.length;
+    balloon.style.backgroundColor = colors[colorIndex];
+}
+
     balloon.addEventListener('click', () => {
-        size += 10;
-        if (size > 420) {
-            size = 200; // Reset size after explosion
-        }
-        balloon.style.width = size + 'px';
-        balloon.style.height = size + 'px';
-        
-        // Cycle through colors
-        colorIndex = (colorIndex + 1) % colors.length;
-        balloon.style.backgroundColor = colors[colorIndex];
+        updateBalloonSize(10);
+        changeColor();
     });
 
-    // Function to handle mouseleave event
-    balloon.addEventListener('mouseleave', () => {
-        size = Math.max(size - 5, 200); // Ensure it doesn't go below 200px
-        balloon.style.width = size + 'px';
-        balloon.style.height = size + 'px';
-        
-        // Cycle through colors in reverse
+    balloon.addEventListener('mouseenter', () => {
+        updateBalloonSize(-5);
         colorIndex = (colorIndex - 1 + colors.length) % colors.length;
         balloon.style.backgroundColor = colors[colorIndex];
-    });
-</script>
-
+});
+    </script>
 </body>
 </html>
