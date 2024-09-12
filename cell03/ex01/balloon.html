@@ -32,8 +32,8 @@
 function updateBalloonSize(sizeChange) {
     currentSize += sizeChange;
     if (currentSize >= 200 && currentSize <= 420) {
-        balloon.style.width = `${currentSize}px`;
-        balloon.style.height = `${currentSize}px`;
+        balloon.style.width = currentSize + "px";
+        balloon.style.height = currentSize + "px";
     }
 
     if (currentSize > 420) {
