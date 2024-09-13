@@ -1,12 +1,13 @@
 body {
   background-image: url('https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/07/petting_pet_cat-1296x728-header.jpg?w=1155&h=1528');
   background-repeat: no-repeat;
-  background-size: cover; /* ทำให้ภาพขยายเต็มจอ */
-  background-position: center; /* จัดให้อยู่ตรงกลาง */
-  height: 100vh; /* ให้ความสูงของ body เท่ากับความสูงของหน้าจอ */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Change from height to min-height */
   margin: 0;
-  overflow: hidden;
-  display: flex; 
+  overflow-x: hidden; /* Hide horizontal overflow */
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -34,6 +35,7 @@ body {
 }
 
 
+
 #center-button {
   padding: 10px 20px;
   font-size: 16px;
@@ -53,21 +55,40 @@ button{
 }
 
 @media screen and (max-width: 768px) {
-  .nav a {
-      float: none;
-      display: block;
-      text-align: left;
-      padding: 10px;
-      font-size: 15px;
+  body {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: stretch; /* Stretch elements to fit the width */
   }
 
   .nav {
-      flex-direction: column;
-      align-items: flex-start;
+    display: flex; /* Makes the navigation responsive */
+    flex-direction: column; /* Stacks the navigation items vertically */
+    align-items: center; /* Center align the navigation items */
+  }
+
+  .profile-photo {
+    width: 80px; /* Further reduce the size of the profile photo */
+    height: 80px;
+  }
+
+  .profile-header h1, .profile-header h2, .profile-details h3, .profile-details ul {
+    padding: 0 10px; /* Add padding to avoid text touching the screen edges */
+  }
+
+  .profile-details, .container, .container-about {
+    width: 100%; /* Ensure containers use available width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  .nav {
+    flex-direction: column; /* Stacks the navbar items vertically on smaller screens */
+  }
+
+  .profile-photo {
+    margin-top: 20px; /* Adds margin to push content down below the navbar */
   }
 
   body {
-      background-size: cover; /* แก้ไขจาก contain เป็น cover */
+    padding-top: 120px; /* Increases padding-top to accommodate the taller, stacked navbar */
   }
 }
 
