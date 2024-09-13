@@ -33,12 +33,6 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.button-container {
-  position: absolute; /* Absolute positioning relative to its nearest positioned ancestor (body in this case) */
-  top: 50%; /* Moves the top of the element to the center of the container */
-  left: 50%; /* Moves the left of the element to the center of the container */
-  transform: translate(-50%, -50%); /* Adjusts the position to truly center the element */
-}
 
 #center-button {
   padding: 10px 20px;
@@ -81,13 +75,13 @@ button{
   color: white;
 }
 
-/* First Part: Profile Header */
+
 .profile-header {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 2rem 0;
-  background-image: url('background-image.jpg'); /* You can put your background image here */
+  background-image: url('background-image.jpg'); 
   background-size: cover;
   background-position: center;
 }
@@ -110,14 +104,13 @@ button{
   color: #ccc;
 }
 
-/* Second Part: Profile Details */
 .profile-details {
   margin: 2rem auto;
   padding: 1rem;
   max-width: 800px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Adding rounded corners */
+  border-radius: 10px;
 }
 
 .profile-details h3 {
@@ -169,7 +162,6 @@ button{
   text-decoration: underline;
 }
 
-/* For a better visual separation, you can also add some space between the sections */
 section {
   margin-bottom: 2rem;
 }
@@ -185,9 +177,9 @@ section {
 
 .container-about {
   background-color: rgba(255, 255, 255, 0.8); /* ปรับสีพื้นหลังและความโปร่งใส */
-  padding: 20px; /* เพิ่ม padding เพื่อสร้างช่องว่าง */
-  border-radius: 10px; /* ทำมุมโค้ง */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ใส่เงา */
-  max-width: 200px; /* กำหนดความกว้างสูงสุด */
-  margin: auto; /* จัดให้อยู่ตรงกลาง */
+  padding: 20px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
 }
