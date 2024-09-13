@@ -79,7 +79,7 @@ button{
     width: 100%; /* Ensure containers use available width */
     box-sizing: border-box; /* Include padding in width calculation */
   }
-  .nav {
+    .nav {
     flex-direction: column; /* Stacks the navbar items vertically on smaller screens */
   }
 
