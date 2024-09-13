@@ -27,9 +27,6 @@ body {
     border-collapse: collapse;
 }
 
-.invisible-table td {
-    border: none;
-}
 
 .profile-picture {
     width: 100px;
@@ -37,16 +34,6 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-}
-
-.login {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.description {
-    font-size: 14px;
-    margin-bottom: 20px;
 }
 
 .social-icons img {
@@ -64,5 +51,5 @@ body {
 }
 
 .contact-button:hover {
-    background-color: #45a049;
+    background-color: #1f7a24;
 }

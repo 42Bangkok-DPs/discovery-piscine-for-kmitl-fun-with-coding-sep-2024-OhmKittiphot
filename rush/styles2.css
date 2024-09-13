@@ -1,0 +1,124 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background: url('https://wallpapercave.com/wp/wp11292692.png') no-repeat center center fixed;
+    color: #333;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: url('https://i.pinimg.com/originals/53/e1/5f/53e15fea80b4f483baa3f6ba2ee23f7e.jpg') no-repeat center center fixed;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ff69b4;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #888;
+}
+
+.about-me img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.about-me p {
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+.contact h2 {
+    font-size: 1.5em;
+    color: #ff69b4;
+    margin-top: 20px;
+}
+
+.contact p {
+    font-size: 1em;
+    color: #555;
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .about-me p {
+        font-size: 1em;
+    }
+}
+
+.nav {
+    background-color: #b568cc;
+    position: absolute; /* Sets the navbar at the top of the viewport */
+    top: 0; /* navbar to the top */
+    width: 100%; /* Ensures the navbar stretches across the full width */
+    display: inline;
+    padding: 10px 0;
+}
+
+.nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
