@@ -182,3 +182,12 @@ section {
   max-width: 600px; /* กำหนดความกว้างสูงสุด */
   margin: auto; /* จัดให้อยู่ตรงกลาง */
 }
+
+.container-about {
+  background-color: rgba(255, 255, 255, 0.8); /* ปรับสีพื้นหลังและความโปร่งใส */
+  padding: 20px; /* เพิ่ม padding เพื่อสร้างช่องว่าง */
+  border-radius: 10px; /* ทำมุมโค้ง */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+  max-width: 200px; /* กำหนดความกว้างสูงสุด */
+  margin: auto; /* จัดให้อยู่ตรงกลาง */
+}
