@@ -9,7 +9,6 @@
 <body>
     <div class="calculator">
         <h2>Calculator</h2>
-        <!-- Input fields for left and right operands -->
         <input type="number" id="leftOperand" placeholder="Left Operand" min="0">
         <select id="operator">
             <option value="+">+</option>
@@ -19,7 +18,6 @@
             <option value="%">%</option>
         </select>
         <input type="number" id="rightOperand" placeholder="Right Operand" min="0">
-        <!-- Button to submit the calculation -->
         <button onclick="calculate()">Try me!</button>
     </div>
 
@@ -39,7 +37,6 @@
 
             let result;
 
-            // Perform the operation based on the operator selected
             switch (operator) {
                 case '+':
                     result = leftOperand + rightOperand;
@@ -72,15 +69,14 @@
                     return;
             }
 
-            // Display the result in an alert and log it to the console
-            alert(`Result: ${result}`);
-            console.log(`Result: ${result}`);
+            alert('Result: ' + result);
+            console.log('Result: ' + result);
         }
 
-        // Function to show alert every 30 seconds
+        // alert every 30 seconds
         setInterval(() => {
             alert('Please, use me...');
-        }, 30000); // 30 seconds = 30000 milliseconds
+        }, 30000);
     </script>
 </body>
 </html>

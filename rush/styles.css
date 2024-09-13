@@ -1,5 +1,5 @@
 /* Default styles for larger screens (desktops) */
-body {
+.bg {
   background-image: url(https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/07/petting_pet_cat-1296x728-header.jpg?w=1155&h=1528);
   background-repeat: no-repeat;
   background-size: cover; /* ทำให้ภาพขยายเต็มหน้าจอ */
@@ -75,4 +75,16 @@ body {
       background-size: cover;
       background-position: center;
   }
+}
+
+.button-container {
+  text-align: center;
+}
+
+.center-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  
 }
