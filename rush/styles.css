@@ -1,24 +1,26 @@
-/* Default styles for larger screens (desktops) */
-.bg {
-  background-image: url(https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/07/petting_pet_cat-1296x728-header.jpg?w=1155&h=1528);
+body {
+  background-image: url('https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/07/petting_pet_cat-1296x728-header.jpg?w=1155&h=1528');
   background-repeat: no-repeat;
-  background-size: cover; /* ทำให้ภาพขยายเต็มหน้าจอ */
-  background-position: center; /* จัดให้อยู่ตรงกลางเสมอ */
+  background-size: cover; /* ทำให้ภาพขยายเต็มจอ */
+  background-position: center; /* จัดให้อยู่ตรงกลาง */
   height: 100vh; /* ให้ความสูงของ body เท่ากับความสูงของหน้าจอ */
   margin: 0;
   overflow: hidden;
-  position: relative;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
     background-color: #064072;
-    overflow: hidden;
-    justify-content: flex-end;
-    display: flex;
+    position: absolute; /* Sets the navbar at the top of the viewport */
+    top: 0; /* navbar to the top */
+    width: 100%; /* Ensures the navbar stretches across the full width */
+    display: inline;
+    padding: 10px 0;
 }
 
 .nav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 12px 10px;
@@ -28,24 +30,34 @@
 
 .nav a:hover {
     background-color: #ddd;
-    color: rgb(255, 0, 0);
-}
-
-.nav a.active {
-    background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
 
-.invisible-table {
-  width: 100%;
-  border-collapse: collapse;
+.button-container {
+  position: absolute; /* Absolute positioning relative to its nearest positioned ancestor (body in this case) */
+  top: 50%; /* Moves the top of the element to the center of the container */
+  left: 50%; /* Moves the left of the element to the center of the container */
+  transform: translate(-50%, -50%); /* Adjusts the position to truly center the element */
 }
 
-.invisible-table td {
+#center-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button{
+  background-color: rgb(255, 255, 255);
   border: none;
+  border-radius: 12px;
+  
 }
 
-/* Styles for smaller screens (tablets, phones) */
+.change-button :hover{
+  background-color: #064072;
+  color: rgb(255, 255, 255);
+}
+
 @media screen and (max-width: 768px) {
   .nav a {
       float: none;
@@ -65,26 +77,6 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .nav a {
-      font-size: 14px;
-      padding: 8px;
-  }
-
-  body {
-      background-size: cover;
-      background-position: center;
-  }
-}
-
-.button-container {
-  text-align: center;
-}
-
-.center-button {
-  margin: 0 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  
+p{
+  color: rgb(255, 255, 255);
 }
