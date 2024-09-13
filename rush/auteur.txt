@@ -1,2 +1,2 @@
-1 kimongko
-2 bnuntako
+1: kimongko
+2: bnuntako

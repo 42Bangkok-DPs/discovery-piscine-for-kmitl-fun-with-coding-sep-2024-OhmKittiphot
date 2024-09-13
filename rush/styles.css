@@ -80,3 +80,52 @@ button{
 p{
   color: rgb(255, 255, 255);
 }
+
+.profile-card {
+  background-color: rgb(188, 189, 191);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.invisible-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.invisible-table td {
+  border: none;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.table-center{
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
