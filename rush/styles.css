@@ -73,7 +73,7 @@ button{
   }
 
   body {
-      background-size: contain;
+      background-size: cover; /* แก้ไขจาก contain เป็น cover */
   }
 }
 
