@@ -77,55 +77,108 @@ button{
   }
 }
 
-p{
-  color: rgb(255, 255, 255);
+.txt-w{
+  color: white;
 }
 
-.profile-card {
-  background-color: rgb(188, 189, 191);
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
+/* First Part: Profile Header */
+.profile-header {
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  color: white;
+  padding: 2rem 0;
+  background-image: url('background-image.jpg'); /* You can put your background image here */
+  background-size: cover;
+  background-position: center;
 }
 
-.title {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-
-.invisible-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.invisible-table td {
-  border: none;
-}
-
-.profile-picture {
-  width: 100px;
-  height: 100px;
+.profile-photo {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  object-fit: cover;
+  border: 2px solid #fff;
 }
 
-.description {
-  font-size: 18px;
-  margin-bottom: 20px;
+.profile-header h1 {
+  margin: 1rem 0 0.5rem;
+  font-size: 2.5rem;
 }
 
-.social-icons img {
-  width: 30px;
-  margin: 0 10px;
+.profile-header h2 {
+  margin: 0.5rem 0;
+  font-weight: normal;
+  color: #ccc;
 }
 
-.table-center{
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+/* Second Part: Profile Details */
+.profile-details {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Adding rounded corners */
+}
+
+.profile-details h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.profile-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-details li {
+  background-color: #f4f4f4;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-left: 4px solid #ffffff;
+}
+
+/* Last Part: Contact Links */
+.profile-contact {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #333;
+  color: white;
+}
+
+.profile-contact h3 {
+  margin-top: 0;
+}
+
+.profile-contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-contact li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.profile-contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.profile-contact a:hover {
+  text-decoration: underline;
+}
+
+/* For a better visual separation, you can also add some space between the sections */
+section {
+  margin-bottom: 2rem;
+}
+
+.container {
+  background-color: rgba(21, 32, 91, 0.8); /* ปรับสีพื้นหลังและความโปร่งใส */
+  padding: 20px; /* เพิ่ม padding เพื่อสร้างช่องว่าง */
+  border-radius: 10px; /* ทำมุมโค้ง */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+  max-width: 600px; /* กำหนดความกว้างสูงสุด */
+  margin: auto; /* จัดให้อยู่ตรงกลาง */
 }
